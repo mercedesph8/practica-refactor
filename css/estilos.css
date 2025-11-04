@@ -1,0 +1,135 @@
+/*
+Común a todas las páginas
+*/
+body {
+            background-color: #f4f4f4; 
+            color: #333; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+
+        header {
+            background-color: #004a99; 
+            color: white; 
+            padding: 20px 40px; 
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0; 
+            font-size: 2.5em;
+        }
+        
+        header p {
+            margin: 5px 0 0 0; 
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #333; 
+            padding: 10px 40px;
+        }
+        
+        nav ul {
+            margin: 0; 
+            padding: 0; 
+            list-style: none; 
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline-block; 
+            margin-right: 20px;
+        }
+
+        
+        nav a {
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1em;
+        }
+        
+        /* Esto cambia en el index.html y en el sobre.html*/
+        nav a.activo { 
+            color: #00aaff;
+        }
+
+        main {
+            padding: 20px 40px; 
+            min-height: 60vh;
+        }
+
+
+        .caja-contenido {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #004a99; 
+            border-bottom: 2px solid #004a99; 
+            padding-bottom: 5px;
+        }
+        
+        p {
+            line-height: 1.6;
+        }
+        .p1{
+            font-size: 1.1em;
+        }
+
+        #proyectos-destacados{
+            margin-top: 30px;
+        }
+
+        .h3Index{
+            color: #333;
+        }
+
+        .h3SobreMi{
+            color: #555; 
+            margin-top: 30px"
+        }
+        .cajaIndex{
+           background-color: #eee; 
+           border: 1px dashed #ccc; 
+           padding: 40px; 
+           text-align: center; 
+            color: #777;
+        }
+        
+        .lista-habilidades {
+            list-style: square;
+            padding-left: 20px;
+        }
+        
+        .lista-habilidades li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222; 
+            color: #aaa; 
+            padding: 20px 40px; 
+            text-align: center; 
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        .pFooter{
+             line-height: 1.6;
+        }
+        
+        footer .copy-peq {
+            margin: 5px 0 0 0; 
+            font-size: 0.9em;
+        }
+        
