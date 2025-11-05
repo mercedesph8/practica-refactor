@@ -1,135 +1,188 @@
+@charset "UTF-8";
+/*MI IDENTIDAD (Con sass)*/
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*
 Común a todas las páginas
 */
 body {
-            background-color: #f4f4f4; 
-            color: #333; 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0;
-        }
+  background-color: #F0D3F7;
+  color: #120D31;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-        header {
-            background-color: #004a99; 
-            color: white; 
-            padding: 20px 40px; 
-            text-align: center;
-        }
-        
-        header h1 {
-            margin: 0; 
-            font-size: 2.5em;
-        }
-        
-        header p {
-            margin: 5px 0 0 0; 
-            font-style: italic;
-        }
+header {
+  background-color: #302F4D;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+}
 
-        nav {
-            background-color: #333; 
-            padding: 10px 40px;
-        }
-        
-        nav ul {
-            margin: 0; 
-            padding: 0; 
-            list-style: none; 
-            text-align: center;
-        }
-        
-        nav li {
-            display: inline-block; 
-            margin-right: 20px;
-        }
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Libertinus Serif Display", serif;
+}
 
-        
-        nav a {
-            color: white; 
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.1em;
-        }
-        
-        /* Esto cambia en el index.html y en el sobre.html*/
-        nav a.activo { 
-            color: #00aaff;
-        }
+header p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
 
-        main {
-            padding: 20px 40px; 
-            min-height: 60vh;
-        }
+/* ===== NAVEGACIÓN ===== */
+nav {
+  background-color: #302F4D;
+  padding: 10px 40px;
+}
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* enlaces en fila */
+  justify-content: center; /* centrados */
+  gap: 20px; /* separación uniforme */
+}
 
-        .caja-contenido {
-            background-color: white; 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+nav li {
+  display: inline-block;
+}
 
-        h2 {
-            color: #004a99; 
-            border-bottom: 2px solid #004a99; 
-            padding-bottom: 5px;
-        }
-        
-        p {
-            line-height: 1.6;
-        }
-        .p1{
-            font-size: 1.1em;
-        }
+nav a {
+  color: white;
+  text-decoration: none; /* sin subrayado */
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        #proyectos-destacados{
-            margin-top: 30px;
-        }
+nav a:hover {
+  background-color: #B98EA7;
+  color: #302F4D;
+}
 
-        .h3Index{
-            color: #333;
-        }
+nav a.activo {
+  background-color: #B98EA7;
+  color: #302F4D;
+}
 
-        .h3SobreMi{
-            color: #555; 
-            margin-top: 30px"
-        }
-        .cajaIndex{
-           background-color: #eee; 
-           border: 1px dashed #ccc; 
-           padding: 40px; 
-           text-align: center; 
-            color: #777;
-        }
-        
-        .lista-habilidades {
-            list-style: square;
-            padding-left: 20px;
-        }
-        
-        .lista-habilidades li {
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+  padding: 20px 40px;
+  min-height: 60vh;
+}
 
-        footer {
-            background-color: #222; 
-            color: #aaa; 
-            padding: 20px 40px; 
-            text-align: center; 
-            margin-top: 20px;
-        }
-        
-        footer p {
-            margin: 0;
-        }
+.caja-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        .pFooter{
-             line-height: 1.6;
-        }
-        
-        footer .copy-peq {
-            margin: 5px 0 0 0; 
-            font-size: 0.9em;
-        }
-        
+h2 {
+  color: #302F4D;
+  border-bottom: 2px solid var(--color-secundario, #B98EA7);
+  padding-bottom: 5px;
+  font-family: "Libertinus Serif Display", serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.p1 {
+  font-size: 1.1em;
+}
+
+#proyectos-destacados {
+  margin-top: 30px;
+}
+
+.h3Index {
+  color: var(--color-texto-oscuro, #120D31);
+}
+
+.h3SobreMi {
+  color: var(--color-texto-oscuro, #120D31);
+  margin-top: 30px;
+}
+
+.cajaIndex {
+  background-color: #eee;
+  border: 1px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+
+.lista-habilidades {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.lista-habilidades li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ===== FORMULARIO (contacto.html) ===== */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%; /* ocupa todo el ancho */
+  padding: 10px; /* espacio interno */
+  margin-top: 5px; /* espacio entre label y campo */
+  margin-bottom: 15px; /* espacio entre campos */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #302F4D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #B98EA7;
+  color: #302F4D;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #B98EA7;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+footer .copy-peq {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+}/*# sourceMappingURL=estilos.css.map */
